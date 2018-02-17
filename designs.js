@@ -5,11 +5,13 @@ $('#colorPicker').on('input', function() {
 });
 
 // Get column and row values
+$(':submit').on('click', function(e) {
+    e.preventDefault();
+    const row = $('#inputHeight').val();
+    const col = $('#inputWeight').val();
+    makeGrid(row, col);
+});
 
-// When size is submitted by the user, call makeGrid()
-
-function makeGrid() {
-
-// Your code goes here!
+function makeGrid(row, col) {
 
 }
